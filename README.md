@@ -1,4 +1,4 @@
-# Boilerplate
+# MeanStack Boilerplate with angular 5
 ## install
 after cloning npm i in the root directory.
 

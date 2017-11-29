@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "server": "nodemon ./server/bin/www",
+    "server": "nodemon server.js",
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
+    "postinstall": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
