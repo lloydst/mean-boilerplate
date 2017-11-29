@@ -2,12 +2,15 @@
   "name": "boilerplate",
   "version": "0.0.0",
   "license": "MIT",
+  "engines": {
+    "node": "6.12.0"
+  },
   "scripts": {
     "server": "nodemon server.js",
     "ng": "ng",
     "start": "node server.js",
     "build": "ng build",
-    "postinstall": "ng build",
+    "postinstall": "ng build --aot -prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
