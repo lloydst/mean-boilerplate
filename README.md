@@ -25,3 +25,6 @@ server contains all server related stuff.
  - "src" your angular project.
  - "dist" the build version of your angular app (compressed)
  - node
+
+## database
+to connect to a database simple add a .env file in the root and type `MONGOURI = mongodb://localhost:27017/whatever_you_want_the_database_to_be_called` 
