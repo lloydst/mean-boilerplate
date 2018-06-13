@@ -1,4 +1,4 @@
-# MeanStack Boilerplate with angular 5
+# MeanStack Boilerplate with angular 6
 [preview](https://boilerplate-preview.herokuapp.com/)
 ## install
 after cloning `npm i` in the root directory.
