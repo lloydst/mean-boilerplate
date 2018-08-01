@@ -28,3 +28,67 @@ server contains all server related stuff.
 
 ## database
 to connect to a database simple add a .env file in the root and type `MONGOURI = mongodb://localhost:27017/whatever_you_want_the_database_to_be_called` 
+
+# optional
+state
+
+
+
+# adding ngrx (state) to your app
+`npm install @ngrx/schematics --save-dev`
+`ng config cli.defaultCollection @ngrx/schematics`
+## install ngrx packages
+`npm install @ngrx/store @ngrx/effects @ngrx/store-devtools @ngrx/router-store –save`
+`npm install @ngrx/schematics --save-dev`
+`ng config cli.defaultCollection @ngrx/schematics`
+the last command sets up your angular cli so that you can use ngrx schematics
+
+## generate store folder in app folder with root reducer
+`ng generate store State --root --statePath store/reducers --module app.module.ts`
+after this command you will need to fix the following line in app.module
+`import { environment } from ‘../../../environments/environment’;`
+unfortunatly the ngrx schematics arent the smartest thing
+# generate
+auth is just a place holder
+## action
+action definitions
+`ng generate action store/actions/auth --actions index.ts`
+## reducer
+state, initial state, state functions
+`ng generate reducer store/reducers/auth --reducers index.ts`
+## effects
+http request for instance
+`ng generate effect store/effects/auth --module app.module --root true`
+needs the following imports : 
+
+`import { Injectable } from '@angular/core';`
+
+`import { Actions, Effect, ofType } from '@ngrx/effects';`
+
+`import { Observable } from 'rxjs';`
+
+`import { HttpClient } from '@angular/common/http';`
+
+`import * as authActions from '../actions/auth.actions';` (this one has to be changed ofc)
+
+`import { Action } from '@ngrx/store';`
+
+`import { switchMap, map } from 'rxjs/operators';`
+
+## final
+
+the most basic structure you should see is:
+
+(...)
+src
+ - app
+     - store
+        - actions
+             - auth.actions.ts
+        - effects
+             - name.effects.ts
+        - reducers
+             - index.ts
+             - name.reducer.ts
+
+(...)
