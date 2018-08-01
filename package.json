@@ -27,6 +27,7 @@
     "@angular/http": "6.0.0",
     "@angular/platform-browser": "6.0.0",
     "@angular/platform-browser-dynamic": "6.0.0",
+    "@angular/pwa": "^0.6.8",
     "@angular/router": "6.0.0",
     "body-parser": "^1.18.3",
     "cookie-parser": "~1.4.3",
@@ -40,7 +41,8 @@
     "rxjs-compat": "^6.1.0",
     "serve-favicon": "~2.4.2",
     "typescript": "2.7.2",
-    "zone.js": "^0.8.26"
+    "zone.js": "^0.8.26",
+    "@angular/service-worker": "6.0.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.6.0",
