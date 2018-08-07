@@ -21,9 +21,7 @@
               "src/favicon.ico",
               "src/manifest.json"
             ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            
             "scripts": []
           },
           "configurations": {
