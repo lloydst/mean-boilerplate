@@ -4,6 +4,9 @@ This app is a quick start for Mean applications. it currently is setup with a se
 and has a mini guide to setting up [state](#adding-ngrx-(state)-to-your-app).
 
 [preview](https://boilerplate-preview.herokuapp.com/)
+## install
+after cloning `npm i` in the root directory.
+(this also builds the dist folder for the first time)
 
 ## contents
  - [Description](#Description)
