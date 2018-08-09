@@ -46,7 +46,7 @@ module.exports = function(grunt) {
                     cwd: '<%= config.scss %>',
                     src: ['*.scss'],
                     dest: '<%= config.css %>',
-                    ext: '.css',
+                    ext: '.css'
                 }]
             },
         }
