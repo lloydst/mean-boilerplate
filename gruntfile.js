@@ -7,8 +7,8 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('./package.json'),
         config: {
-            webroot: './src',
-            scss: './src/scss',
+            webroot: './styleguide',
+            scss: './styleguide/scss',
             css: '<%= config.webroot %>/assets/css'
         },
 

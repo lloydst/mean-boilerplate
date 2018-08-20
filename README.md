@@ -32,7 +32,7 @@ Use `git clone https://github.com/lloydst/mean-boilerplate.git ./` to clone the 
  for the db setup refer too [database](#database)
 
 # styling
-this project has been setup with scss support and has a basic style library. to make changes simply type: `grunt watch` in the project root and it start watching the scss files for changes in the src/scss directory.
+this project has been setup with scss support and has a basic style library. to make changes simply type: `grunt watch` in the project root and it start watching the scss files for changes in the styleguide/scss directory.
 
 ### sources:
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.

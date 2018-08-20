@@ -1,5 +1,5 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div class="container">
+<!--The content below doubles as the styleguide i would recommend making a new component dedicated to your styleguide (refer to the readme for location).-->
+<!--<div class="container">-->
     <div class="row">
         <div>
             <h1>
@@ -46,8 +46,103 @@
             </ul>
         </div>
     </div>
-</div>
+<!--</div>-->
+<div class="row">
+    <div class="column">
+        <p>this app makes use off a slimmed down version of skeleton.scss</p>
+        <h1>typography:</h1>
+        <h1>h1</h1>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <h4>h4</h4>
+        <h5>h5</h5>
+        <h6>h6</h6>
+        <section>section</section>
+        <div>div</div>
+        <P>and paragraph all look the same</P>
 
+        <h1>buttons</h1>
+        <div>there really are only 2 buttons</div>
+        <button>the one without a class</button><button type="reset" class="button-primary"> and the button with the class
+            button-primary
+        </button>
+
+        <h1>code tag</h1>
+        <div>now you might not use this one alot but it could be usefull: the
+            <code> 
+            'code'tag has also been styled so that it looks like githubs code sections
+            </code>
+        </div>
+        <h1>forms</h1>
+        <div>forms have recieved some styling as well
+            <form action="">
+                <input type="text" placeholder="i am a input">
+                <br>
+                <textarea name="area 1" id="" cols="30" rows="10"> this text area is styled as well </textarea>
+                <label for="nothing">and i am a label</label>
+                <fieldset>i am a field set</fieldset>
+                checkbox:<input type="checkbox" name="checkbox" id=""> radio:
+                <input type="radio" name="radio" id="">
+                <label for="nothing" class="label-body">i am a label with a label-body class</label>
+            </form>
+        </div>
+        <div>
+            skeleton comes with its own grid using classes like:
+            <code>
+                <div class='container'>container (a wrapper class)
+                    <div class='row'> 
+                        row (keeps the divs 1 level down from this div on the same x axis)
+                        <div class='ten columns'>
+                            x columns (this one is ten columns)
+                        </div>
+                        <div class='two columns'>
+                             and this one just 2 columns wide, making it a total of 12 columns
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="one-third column">it also has .one-third.column
+                            <div class="one-half column">on half column</div></div>
+                            <div class="two-third column">and two-third.column</div>
+                            but as you can see it doesnt work all that great when already within a 'grid' i would reccomend setting up a cssgrid of your own
+                    </div>
+                </div>
+                
+            </code>
+        </div>
+        <h1>lists</h1>
+        <ul>
+            <li>unordered</li>
+            <ul>
+                <li>unordered</li>
+                <ol>
+                    <li>ordered</li> 
+                </ol>
+            </ul>
+        </ul>
+        <ol>
+            <li>ordered</li>
+            <ol>
+                <li>ordered</li>
+                <ul>
+                    <li>unordered</li>
+                </ul>
+            </ol>
+        </ol>
+        <h1>media queries:</h1>
+        <div><pre>
+                $bp-larger-than-mobile
+            
+                $bp-larger-than-phablet
+                
+                $bp-larger-than-tablet
+                
+                $bp-larger-than-desktop
+                
+                $bp-larger-than-desktophd
+                </pre>
+        </div>
+    </div>
+</div>
 
 
 <router-outlet></router-outlet>
