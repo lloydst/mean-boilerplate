@@ -1,0 +1,35 @@
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: 0 1fr;
+    
+}
+.wrapper__row {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+}
+.wrapper__padding{
+    padding:10px
+}
+
+@include biggerthen('mobile') {
+    // only uses these classes on mobile
+    .wrapper {
+        margin: 0 10em 0 10em;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-rows: 0 1fr;
+    }
+    .wrapper__row {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fill, minmax(500px,1fr));
+        grid-auto-rows: auto;
+    }
+    // so it lines up with the navigation on any size bigger then mobile
+    .wrapper__padding{
+        padding:0;
+    }
+}

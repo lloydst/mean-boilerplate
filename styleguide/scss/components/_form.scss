@@ -1,0 +1,27 @@
+.form {
+    background-color: #fff;
+}
+.form__group {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: 1fr;
+}
+.form__group--label {
+    font-weight: bold;
+}
+.form__group--input-text {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.form__group--input-text-large {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: none;
+}
