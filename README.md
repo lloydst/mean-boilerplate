@@ -1,3 +1,4 @@
+# this project ahs moved too [MEA7N](https://github.com/lloydst/MEA7N)
 # MeanStack Boilerplate with angular 6
 ## Description
 This app is a quick start for Mean applications. it currently is setup with a service worker so it is progressive. has its own css lib.
